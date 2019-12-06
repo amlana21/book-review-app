@@ -1,0 +1,53 @@
+.overallbdy{
+    background-color: #e3e7f1
+  }
+
+.form-control-borderless {
+    border: none;
+}
+
+.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+div.container{
+    position: absolute;
+    top:120px;
+    left:200px;
+    background-color: #c6cbef;
+    box-shadow: 5px 10px
+}
+
+.custom-scrollbar {
+    position: relative;
+    height: 300px;
+    overflow: auto;
+    }
+    .table-wrapper-scroll-y {
+    display: block;
+    }
+
+h1{
+    color:#2c003e;
+    font-family:Verdana,Serif;
+}
+
+nav span.navtxt{
+    position: absolute;
+    margin:auto 10px auto 40%;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+nav ul li.navlogout{
+    position: absolute;
+    margin:auto 10px auto 92%;
+    /* font-weight: bold;
+    font-size: 3rem; */
+}
+
+/* .loading{
+    display: none
+} */

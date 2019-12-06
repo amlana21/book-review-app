@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Search</title>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <link rel="shortcut icon" href="{{url_for('static',filename='favicon.ico')}}" type="image/x-icon">
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        
+        <link rel='stylesheet' type="text/css"  href="{{ url_for('static', filename='css/index.css') }}">
+    </head>
+    <body class='overallbdy'>
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="/">Home</a>
+                        </li>
+                        
+                          <li class="nav-item active justify-content-end navlogout">
+                              <a class="nav-link" href="/logout">Logout</a>
+                            </li>
+                            </ul>
+                            <span class="navbar-text navtxt">
+                                Search
+                              </span>
+                </nav>
+        <div class="container shadow-lg p-3 mb-5 rounded">
+            <br/>
+            
+            <div class="row justify-content-center">
+                <h1>Search for a Book</h1>
+            </div>
+            <div class="alert alert-danger" style='display:none'>
+                    
+                  </div>
+            <div class="row justify-content-center">
+                                <div class="col-12 col-md-10 col-lg-8">
+                                    <form class="card card-sm" id='srchfrm'>
+                                        <div class="card-body row no-gutters align-items-center">
+                                            <div class="col-auto">
+                                                <i class="fas fa-search h4 text-body"></i>
+                                            </div>
+                                            <!--end of col-->
+                                            <div class="col">
+                                                <input id='srchtxt' class="form-control form-control-lg form-control-borderless" type="search" placeholder="Search books or keywords" required>
+                                                <div class="valid-feedback">Valid.</div>
+                                                <div class="invalid-feedback">Please fill out this field.</div>
+                                            </div>
+                                            <!--end of col-->
+                                            <div class="col-auto">
+                                                <button class="btn btn-lg btn-primary" type="submit">Search</button>
+                                            </div>
+                                            <!--end of col-->
+                                        </div>
+                                    </form>
+                                </div>
+                                <!--end of col-->
+                </div>
+                
+                <div class="row justify-content-center">
+                    <div class="spinner-grow text-muted" id='spindiv' ></div>
+                        <div class="col-15 col-md-10 col-lg-8 ">
+                                
+                                <div class="table-wrapper-scroll-y custom-scrollbar">
+                    <table class='table table-hover table-dark table-striped' id='rslts' >
+                        <tbody>
+                            <!-- <tr></tr> -->
+                        </tbody>
+
+                    </table>
+                    </div>
+                    </div>
+                </div>
+                            
+        </div>
+
+        <script type='text/javascript' src="{{url_for('static',filename='js/search.js')}}"></script>
+    </body>
+</html>

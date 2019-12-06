@@ -1,0 +1,46 @@
+div.container{
+    position: absolute;
+    top:120px;
+    left:200px
+}
+
+.overallbdy{
+    background-color: #e3e7f1
+  }
+
+/* img.bookimg{
+    height:"42";
+    width:"42"
+} */
+
+div.revtbllist{
+    margin-bottom: 20px;
+}
+
+.custom-scrollbar {
+    position: relative;
+    height: 300px;
+    overflow: auto;
+    }
+    .table-wrapper-scroll-y {
+    display: block;
+    }
+
+div.container{
+    background-color: #c6cbef;
+    margin-bottom: 50px;
+}
+
+nav span.navtxt{
+    position: absolute;
+    margin:auto 10px auto 40%;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+nav ul li.navlogout{
+    position: absolute;
+    margin:auto 10px auto 92%;
+    /* font-weight: bold;
+    font-size: 3rem; */
+}

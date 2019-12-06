@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Books</title>
+        <link rel='stylesheet' type="text/css"  href="{{ url_for('static', filename='css/login.css') }}">
+        <link rel="shortcut icon" href="{{url_for('static',filename='favicon.ico')}}" type="image/x-icon">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        
+    </head>
+    <body class='overallbdy'>
+            <div class="wrapper fadeInDown">
+                    <div id="formContent">
+                      <!-- Login Form -->
+                      <form id='login'>
+                        <input type="text" id="usrnme" class="fadeIn second" name="login" placeholder="login"  required value="abcuser2">
+                        <input type="password" id="pswrd" class="fadeIn third" name="login" placeholder="password" required value="abc1234">
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                        <input type="submit" id='sbmt' class="fadeIn fourth" value="Log In">
+                        
+                      </form>
+                  
+                      
+                      <div id="formFooter">
+                        <a class="underlineHover" id='regster' href='#'>Register</a>
+                      </div>
+                      
+            
+            </div>
+            <div id="myModal" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <form id="registerfrm">
+                      <div class="form-group">
+                          <label for="fname">First Name:</label>
+                          <input type="text" class="form-control" id="fname" required>
+                          <div class="valid-feedback">Valid.</div>
+                          <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="lname">Last Name:</label>
+                            <input type="text" class="form-control" id="lname" required>
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                          </div>
+                    <div class="form-group">
+                      <label for="email">Email address:</label>
+                      <input type="text" class="form-control" id="email" required>
+                      <div class="valid-feedback">Valid.</div>
+                      <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="uname">User Name:</label>
+                        <input type="text" class="form-control" id="uname" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                      </div>
+                    <div class="form-group">
+                      <label for="pwd">Password:</label>
+                      <input type="password" class="form-control" id="pwd" required>
+                      <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+              
+              </div>
+                  
+                    </div>
+        
+    <script type='text/javascript' src="{{ url_for('static', filename='js/app.js') }}"></script>
+    </body>
+</html>
