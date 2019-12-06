@@ -4,7 +4,8 @@ This is a flask application which lets users search for a book and submit review
 
 <strong>Backend:</strong>  
  * Flask
- * Postgres DB
+ * Postgres DB  
+ * Book Reads API (https://www.goodreads.com/api)
 
 <strong>FrontEnd:</strong>  
  * HTML  
